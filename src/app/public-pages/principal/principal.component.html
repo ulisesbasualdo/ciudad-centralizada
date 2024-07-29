@@ -1,0 +1,14 @@
+<app-public-nav></app-public-nav>
+<app-cabecera-paralax></app-cabecera-paralax>
+@for(seccion of seccionesImagenesTexto; track seccion.id){
+    <app-imagen-texto
+        [subtitulo]="seccion.subtitulo"
+        [titulo]="seccion.titulo"
+        [descripcion]="seccion.descripcion"
+        [imagen]="seccion.imagen"
+        [imagenPrimero]="seccion.imagenPrimero"
+        [bgColor]="seccion.bgColor"
+    ></app-imagen-texto>
+}
+<app-contacto></app-contacto>
+<app-public-footer></app-public-footer>

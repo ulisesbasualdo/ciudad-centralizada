@@ -1,0 +1,78 @@
+section{
+    padding: 50px 150px;
+}
+
+.boton-enviar{
+    background-color: var(--azul-don-angel);
+    border-style: none;
+}
+
+.boton-enviar:hover{
+    background-color: #2d479e;
+}
+
+.section-title{
+    margin: 10px;
+}
+
+.section-title h2{
+    /* font-size: 2rem;
+    font-weight: 700;
+    color: #333; */
+    padding: 10px 0px;
+}
+
+/* .section-title p{
+    font-size: 1.2rem;
+    color: #666;
+} */
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+button {
+    margin: 10px;
+} 
+
+@media (min-width: 1200px){
+    .contenedor-section{
+      display: flex;
+      justify-content: center;
+    }
+    section{
+      width: 65%;
+      padding: 50px 0px;
+    }
+  }
+  
+  @media (min-width: 1300px){
+    section{
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 1400px){
+    section{
+      width: 50%;
+    }
+  }
+
+@media (max-width: 1024px) {
+    section{
+        padding: 50px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    section{
+        padding: 50px 20px;
+    }
+}

@@ -1,1 +1,306 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+h1 {
+    font-weight: 700;
+    font-family: "Zain", sans-serif;
+    font-size: 3.5vmax;
+  }
+  
+  h2 {
+    font-size: 3vmax;
+    font-weight: 600;
+    font-family: "Zain", sans-serif;
+  }
+  
+  h3 {
+    font-size: 2.25vmax;
+    font-weight: 600;
+    font-family: "Zain", sans-serif;
+  }
+  
+  h4,
+  p,
+  input,
+  a,
+  .form-control,
+  .form-select,
+  button,
+  button.gf {
+    font-size: 1.5vmax;
+    font-family: "Zain", sans-serif;
+  }
+  
+  .sumate-wp a,
+  .sumate-wp p {
+    font-size: 3vmax;
+    font-family: "Zain", sans-serif;
+  }
+  
+  .g-btn-submit {
+    transition: all 0.5s;
+  }
+  
+  /* .swiper{
+      --swiper-navigation-size: 5vmax!important;
+  } */
+  
+  @media (max-width: 768px) {
+    h1 {
+        font-weight: 600;
+        font-size: 5.5vmax;
+    }
+
+    h2 {
+      font-size: 5vmax;
+      font-weight: 500;
+    }
+  
+    h3 {
+      font-size: 4.5vmax;
+      font-weight: 700;
+    }
+  
+    p,
+    h4,
+    input,
+    a,
+    .form-control,
+    .form-select,
+    button,
+    button.gf {
+      font-size: 2.5vmax;
+    }
+  }
+  
+  /* Animaciones */
+  
+  /* FADE */
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+  }
+  
+  .fadeInRight {
+    animation: fadeInRight 0.9s ease 0s 1 normal forwards;
+  }
+  
+  .fadeInLeft {
+    animation: fadeInLeft 0.9s ease 0s 1 normal forwards;
+  }
+  
+  .fadeInTop {
+    animation: fadeInTop 0.9s ease 0s 1 normal forwards;
+  }
+  
+  .fadeInBottom {
+    animation: fadeInBottom 0.9s ease 0s 1 normal forwards;
+  }
+  
+  .fadeInBackward {
+    animation: fadeInBackward 1s ease 0s 1 normal forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBackward {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* FIN FADE */
+  
+  
+  
+  /* SCALE */
+  
+  .scaleIn {
+    animation-name: scaleIn;
+    animation-duration: 800ms; /* 500ms + 300ms */
+  }
+  
+  .scaleInDiscreto {
+    animation-name: scaleInDiscreto;
+    animation-duration: 800ms;
+  }
+  
+  .scaleOut {
+    animation-name: scaleOut;
+    animation-duration: 1000ms; /* 500ms + 300ms */
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleInDiscreto {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  /* FIN SCALE */
+  
+  /* ZOOM */
+  
+  .bgZoomIn {
+    animation: bgZoomIn 7s ease-in;
+    transform-origin: center center;
+  }
+  
+  .bgZoomOut {
+    animation: bgZoomOut 7s ease-in;
+    transform-origin: center center;
+    transform: scale(1.1);
+  }
+  
+  @keyframes bgZoomOut {
+    from {
+      transform: scale(1.1);
+    }
+  
+    to {
+      transform: scale(1);
+      /* Puedes ajustar el nivel de acercamiento */
+    }
+  }
+  
+  @keyframes bgZoomIn {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* FIN ZOOM */
+  
+  img {
+      animation-name: fadeInImg;
+      animation-duration: 2s;
+  }
+  
+  @keyframes fadeInImg {
+      0% {
+          opacity: 0;
+      }
+      25% {
+        opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }

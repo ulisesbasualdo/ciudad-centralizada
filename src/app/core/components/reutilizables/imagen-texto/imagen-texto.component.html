@@ -1,0 +1,16 @@
+<section [style.background-color]=bgColor
+    [style.color]=color
+>
+    <div appAnimations animationInput="fadeInLeft" class="image" [ngClass]="imagenPrimero ? 'order-1' : 'order-2'">
+        <img src="{{imagen}}" alt="" class="lenguado img-fluid">
+
+    </div>
+    <div appAnimations animationInput="fadeInRight" class="content" [ngClass]="!imagenPrimero ? 'order-1' : 'order-2'">
+        <div class="text" id="nosotros">
+            <h4><span>{{topSubtitulo}}</span></h4>
+            <h2><span>{{titulo}}</span></h2>
+            <h2>{{subtitulo}}</h2>
+            <p>{{descripcion}}</p>
+        </div>
+    </div>
+</section>
