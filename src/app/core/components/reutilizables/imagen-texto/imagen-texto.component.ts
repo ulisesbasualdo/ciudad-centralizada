@@ -18,6 +18,6 @@ export class ImagenTextoComponent {
   @Input()bgColor: string = '#fff';
   @Input()animationInputImagen: string = 'fadeInTop';
   @Input()animationInputTexto: string = 'fadeInRight';
-  @Input()color!: string;
+  @Input()color: string= '#000';
   @Input()topSubtitulo!: string;
 }

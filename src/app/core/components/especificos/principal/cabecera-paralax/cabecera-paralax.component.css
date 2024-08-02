@@ -12,7 +12,7 @@ p {
     text-shadow: rgb(0, 0, 0) 1px 1px 9px;
 }
 
-.header {
+/* .header {
     display: grid;
     place-items: center;
     position: relative;
@@ -20,6 +20,14 @@ p {
     overflow-x: clip;
     padding-block: 7rem;
     margin-block-end: 3rem;
+} */
+
+.header{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 100dvh;
+    overflow-x: clip;
 }
 
 .header-content {
@@ -37,7 +45,9 @@ p {
 }
 
 img.header-image {
-    filter: brightness(0.5);
+    filter: brightness(0.7);
+    position: fixed;
+    object-position: bottom;
 }
 
 span {
@@ -54,7 +64,7 @@ span {
 
 @supports(animation-timeline: view()) {
     .header {
-        height: 100svh;
+        height: 100dvh;
     }
 
     .header-content {
