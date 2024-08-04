@@ -14,51 +14,109 @@ export class PublicNavComponent {
   @ViewChild('header') menu!: ElementRef<HTMLElement>;
 
   navItems = [
+  //   <ul>
+  //   <li><a href="#">Inicio</a></li>
+  //   <li><a href="#salud">Salud</a></li>
+  //   <li><a href="#policia">Policía</a></li>
+  //   <li><a href="#bomberos">Bomberos</a></li>
+  //   <li><a href="#transporte">Transporte</a></li>
+  //   <li><a href="#remises">Remises</a></li>
+  //   <li><a href="#perdidos">Perdidos y Extraviados</a></li>
+  //   <li><a href="#electricos">Electricidad</a></li>
+  //   <li><a href="#actividades">Actividades</a></li>
+  // </ul>
+
     {
       nombre: 'Inicio',
       routerLink: '',
       fragment: ''
     },
     {
-      nombre: 'Sucursales',
+      nombre: 'Salud',
       routerLink: '',
-      fragment: 'Sucursales'
+      fragment: 'salud'
     },
     {
-      nombre: 'Ofertas Semanales',
+      nombre: 'Policía',
       routerLink: '',
-      fragment: 'OfertasSemanales'
+      fragment: 'policia'
     },
     {
-      nombre: 'Ofertas Exclusivas',
+      nombre: 'Bomberos',
       routerLink: '',
-      fragment: 'OfertasExclusivas'
+      fragment: 'bomberos'
     },
     {
-      nombre: 'Nosotros',
-      routerLink: '/nosotros',
-      fragment: ''
+      nombre: 'Transporte',
+      routerLink: '',
+      fragment: 'transporte'
     },
     {
-      nombre: 'Distribuidora',
-      routerLink: '/distribuidora',
-      fragment: ''
+      nombre: 'Remises',
+      routerLink: '',
+      fragment: 'remises'
     },
     {
-      nombre: 'Mega Ahorro',
-      routerLink: '/megaahorro',
-      fragment: ''
+      nombre: 'Perdidos y Extraviados',
+      routerLink: '',
+      fragment: 'perdidos'
     },
     {
-      nombre: 'Trabajá con Nosotros',
-      routerLink: '/nosotros',
-      fragment: 'TrabajaConNosotros'
+      nombre: 'Electricidad',
+      routerLink: '',
+      fragment: 'electricidad'
     },
     {
-      nombre: 'Contacto',
-      routerLink: '/nosotros',
-      fragment: 'Contacto'
+      nombre: 'Actividades',
+      routerLink: '',
+      fragment: 'actividades'
     },
+
+    // {
+    //   nombre: 'Inicio',
+    //   routerLink: '',
+    //   fragment: ''
+    // },
+    // {
+    //   nombre: 'Sucursales',
+    //   routerLink: '',
+    //   fragment: 'Sucursales'
+    // },
+    // {
+    //   nombre: 'Ofertas Semanales',
+    //   routerLink: '',
+    //   fragment: 'OfertasSemanales'
+    // },
+    // {
+    //   nombre: 'Ofertas Exclusivas',
+    //   routerLink: '',
+    //   fragment: 'OfertasExclusivas'
+    // },
+    // {
+    //   nombre: 'Nosotros',
+    //   routerLink: '/nosotros',
+    //   fragment: ''
+    // },
+    // {
+    //   nombre: 'Distribuidora',
+    //   routerLink: '/distribuidora',
+    //   fragment: ''
+    // },
+    // {
+    //   nombre: 'Mega Ahorro',
+    //   routerLink: '/megaahorro',
+    //   fragment: ''
+    // },
+    // {
+    //   nombre: 'Trabajá con Nosotros',
+    //   routerLink: '/nosotros',
+    //   fragment: 'TrabajaConNosotros'
+    // },
+    // {
+    //   nombre: 'Contacto',
+    //   routerLink: '/nosotros',
+    //   fragment: 'Contacto'
+    // },
   ];
 
   toggleNavbar() {

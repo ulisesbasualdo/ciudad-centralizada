@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import {
   ImagenTextoComponent,
   PublicFooterComponent,
@@ -11,6 +11,7 @@ import {
   DescripcionComponent,
 } from '../../core/components/especificos/principal';
 import { AnimationsDirective } from '../../core/directives';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -28,29 +29,21 @@ import { AnimationsDirective } from '../../core/directives';
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css',
 })
-export class PrincipalComponent {
-  transporte = 
-    {
-      id: 1,
-      subtitulo: '',
-      titulo: 'Transporte',
-      descripcion: ` 
-      Página de Facebook Costa Azul | <a 
-      class="gf"
-      href="https://www.facebook.com/profile.php?id=100063484871855" 
-      target="_blank"><strong>Clic Aquí</strong></a>
-      <br>
-      Es la página oficial del único micro que une:
-      <br>
-      Miramar - Mar Del Plata
-      <br>
-      Miramar - Mar del Sur
-      <br>
-      Miramar - Otamendi
-      <br>
-      Allí podrás ver los horarios del Micro`,
-      imagen: 'img/terminal.webp',
-      imagenPrimero: true,
-      bgColor: 'transparent',
-    }
+export class PrincipalComponent implements AfterViewInit{
+  constructor(
+    private route: ActivatedRoute
+  ) { }
+
+  ngAfterViewInit(): void {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 0);
+      }
+    });
+  }
 }
