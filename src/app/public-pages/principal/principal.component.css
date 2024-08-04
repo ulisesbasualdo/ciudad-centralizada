@@ -1,9 +1,24 @@
+/* =============== */
+/* GENERAL */
+/* =============== */
+/* p.warning{
+  color: #fff700;
+  text-shadow: 1px 1px 1px #000;
+} */
+
+.title{
+  text-wrap: balance;
+}
+
+/* a:active {
+  text-decoration: none;
+} */
 
 /* =============== */
 /* SECTION REMISES */
 /* =============== */
 
-section.remises {
+section.contenedor-cards {
   text-align: center;
   padding: 5%;
 }
@@ -31,6 +46,9 @@ section.remises .title {
 }
 
 @media (max-width: 768px) {
+  .title{
+    text-align: left;
+  }
   .card {
     width: 100%;
   }

@@ -61,8 +61,6 @@ export class PublicNavComponent {
     },
   ];
 
-  constructor(private viewportScroller: ViewportScroller){}
-
   toggleNavbar() {
     this.navbar.nativeElement.classList.toggle('navbar-mobile');
     const toggleIcon = this.navbar.nativeElement.querySelector('.mobile-nav-toggle');
@@ -83,23 +81,6 @@ export class PublicNavComponent {
   }
 
 
-  ubicacionPrincipal = this.viewportScroller.getScrollPosition()[1];
-  @HostListener('window:scroll', ['$event'])
-  ocultarYMostrarMenu(){
-      if(this.ubicacionPrincipal >= this.viewportScroller.getScrollPosition()[1]){
-        this.menu.nativeElement.style.top = '0';
-      }
-      else{
-        this.menu.nativeElement.style.top = '-150px';			
-      }
-      this.ubicacionPrincipal = this.viewportScroller.getScrollPosition()[1];
-      // *Este código es por si quiero añadirle una clase al menu cuando llegue a determinada altura
-      // *Si está comentado, se debe establecer la clase explicitamente
-      // if (this.viewportScroller.getScrollPosition()[1] > 500) {
-      //   this.menu.nativeElement.classList.add('header-scrolled');
-      // } else {
-      //   this.menu.nativeElement.classList.remove('header-scrolled');
-      // }
-    }
+  
 
 }

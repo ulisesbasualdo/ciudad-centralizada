@@ -1,123 +1,232 @@
+<!-- MARK: NAV -->
+<app-public-nav></app-public-nav>
+<!-- MARK: Cabecera -->
 <app-cabecera-paralax></app-cabecera-paralax>
-
 <!-- MARK: Transporte -->
- <app-imagen-texto
- [titulo]="transporte.titulo"
- [descripcion]="transporte.descripcion"
- [imagen]="transporte.imagen"></app-imagen-texto>
-<!-- <section class="imagen-texto"> 
-  <div appAnimations animationInput="fadeInBottom" class="image">
-    <img src="img/terminal.webp" alt="" />
-  </div>
-  <div appAnimations animationInput="fadeInRight" class="content">
-    <div class="text">
-      <h2><span>Transporte</span></h2>
-      <p>
-        Página de Facebook Costa Azul |
-        <a
-          class="gf"
-          href="https://www.facebook.com/profile.php?id=100063484871855"
-          target="_blank"
-          rel="noopener"
-          ><strong>Clic Aquí</strong></a
-        >
-        <br />
-        Es la página oficial del único micro que une:
-        <br />
-        Miramar - Mar Del Plata
-        <br />
-        Miramar - Mar del Sur
-        <br />
-        Miramar - Otamendi
-        <br />
-        Allí podrás ver los horarios del Micro`
-      </p>
-    </div>
-  </div>
-</section> -->
+<!-- <app-imagen-texto
+  [titulo]="transporte.titulo"
+  [descripcion]="transporte.descripcion"
+  [imagen]="transporte.imagen"
+>
+</app-imagen-texto> -->
 <!-- MARK: Remises -->
-<!-- <section class="imagen-texto">
-  <div appAnimations animationInput="fadeInLeft" class="image">
-    <img src="img/cartel-miramar-tren.webp" alt="" />
+
+<section id="salud" class="contenedor-cards salud">
+  <!-- ⚠️ Aclaración: Los dos hospitales listados son el mismo, pero en Google aparecen como distintos y tienen distinto número de teléfono, aunque la dirección es la misma
+Hospital Miramar
+Dirección: Diag. J. M. Dupuy 1550 Cómo llegar
+Teléfono: 02291 43-1778 llamar
+Hospital Municipal Dr. Marino Cassano 
+Dirección: Diag. J. M. Dupuy 1550 Cómo llegar
+Teléfono: 02291 43-1253 llamar
+Instituto Medico Privado Mitre SRL
+Dirección: Av B Mitre 1146 Cómo llegar
+Teléfono: 02291 42-1149 llamar
+Salitas:
+Salita Parquemar, Miramar
+Dirección: Av. María Erramouspe Cómo llegar
+Centro De Atención primaria De Salud "Las Flores"
+Dirección: C. 9 3761 Cómo llegar
+Teléfono: 02291 43-3809 llamar
+Caps Belgrano
+Dirección: C. 43 2399-2499 Cómo llegar
+Teléfono: 02291 43-3295 llamar
+
+Más información útil:
+Consultorio Pediátrico Miramar
+Dirección: C. 23 1158 Cómo llegar
+Teléfono: 02291 42-3607 llamar -->
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Salud</h2>
+    <p appAnimations animationInput="fadeInBottom" class="warning">Aclaración: Los dos primeros hospitales listados son el mismo, pero en Google aparecen como distintos y tienen distinto número de teléfono, aunque la dirección es la misma</p>
   </div>
-  <div appAnimations animationInput="fadeInRight" class="content">
-    <div class="text">
-      <h2><span>Remises</span></h2>
-      <div class=contenido>
-        <p>Ver todos los remises en Google con sus valoraciones
-        <a
-          href="https://www.google.com/search?sca_esv=e59d9031b627fbb2&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=ADLYWIJD3ry-PYgAUHBXpQrjXzNMtsrKDw:1721142254901&q=remises+en+miramar&rflfq=1&num=10&sa=X&ved=2ahUKEwis6NfF6quHAxWUppUCHcFRC6sQjGp6BAggEAE&biw=1358&bih=620&dpr=1#rlfi=hd:;si:6636147762236742401,l,ChJyZW1pc2VzIGVuIG1pcmFtYXJIpuC2jY-rgIAIWhgQABgCIhJyZW1pc2VzIGVuIG1pcmFtYXKSAQx0YXhpX3NlcnZpY2WaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkNkbHBRZDFoUkVBRaoBSBABKgsiB3JlbWlzZXMoDjIfEAEiGyq3jVeud_Dtz3AmYKd-f91H_SiqFuAmNVpHpDIWEAIiEnJlbWlzZXMgZW4gbWlyYW1hcg;mv:[[-38.262890299999995,-57.834284],[-38.275551899999996,-57.848665000000004]]"
-          target="_blank"
-          rel="noopener"
-          >Clic Aquí</a></p>
-        <ul>
-          <li class="nombre-negocio">
-            <h3>Remisse Plaza</h3>
-            <ul>
-              <li><p>Calle 23 1768</p></li>
-              <li><p>Teléfonos</p>
-                <ul>
-                <li><p><a href="tel:+542291431349">02291 43-1349</a></p></li>
-                <li><p><a href="tel:+542291432076">432076</a></p></li>
-            </ul>
-              </ul>
-          <li class="nombre-negocio"><h3>Remis Sur</h3>
-            <ul>
-              <li><p>Dirección: Calle 23 2225</p></li>
-              <li><p>Teléfono: <a href="tel:+542291421017">02291 42-1017</a></p></li>
-            </ul>
-          </li>
-            <li class="nombre-negocio"><h3>Remisse Pronto</h3>
-                <ul>
-                <li><p>Dirección: Centro Zona 4, Calle 23 1031</p></li>
-                <li><p>Teléfono: <a href="tel:+542291420000">02291 42-0000</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Remise Plaza panda</h3>
-                <ul>
-                <li><p>Dirección: Diagonal Fortunato de la Plaza 1452, Centro</p></li>
-                <li><p>Teléfono: <a href="tel:+542291430517">02291 43-0517</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Remiseria Miramar</h3>
-                <ul>
-                <li><p>Dirección: Calle 21 1818, Centro</p></li>
-                <li><p>Teléfono: <a href="tel:+542291423200">02291 42-3200</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Remises Danny</h3>
-                <ul>
-                <li><p>Dirección: Calle 26 1859</p></li>
-                <li><p>Teléfono: <a href="tel:+542291430034">02291 43-0034</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Hola Remisse</h3>
-                <ul>
-                <li><p>Dirección: Calle 30 1053</p></li>
-                <li><p>Teléfono: <a href="tel:+542291422720">02291 42-2720</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Centro Taxi</h3>
-                <ul>
-                <li><p>Dirección: Calle 21 1621, Centro</p></li>
-                <li><p>Teléfono: <a href="tel:+542291432929">02291 43-2929</a></p></li>
-                </ul>
-            </li>
-            <li class="nombre-negocio"><h3>Mitre Remisse</h3>
-                <ul>
-                <li><p>Dirección: Calle 26 664</p></li>
-                <li><p>Teléfono: <a href="tel:+542291430055">02291 43-0055</a></p></li>
-                </ul>
-            </li>
-        </ul>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Hospital Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Diag. J. M. Dupuy 1550 <a href="https://g.co/kgs/GpV6kuh" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291431778">02291 43-1778</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Hospital Municipal Dr. Marino Cassano</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Diag. J. M. Dupuy 1550 <a href="https://g.co/kgs/sNjAaj8" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291431253">02291 43-1253</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Instituto Medico Privado Mitre SRL</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Av B Mitre 1146 <a href="https://g.co/kgs/1ZgvqdH" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291421149">02291 42-1149</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Salita Parquemar, Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Av. María Erramouspe <a href="https://g.co/kgs/3XNe4Af" target="_blank" rel="noopener">¿Cómo llegar?</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Centro De Atención primaria De Salud "Las Flores"</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: C. 9 3761 <a href="https://g.co/kgs/cNbrc9V" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291433809">02291 43-3809</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Caps Belgrano</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: C. 43 2399-2499 <a href="https://g.co/kgs/pbruyEd" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291433295">02291 43-3295</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Consultorio Pediátrico Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: C. 23 1158 <a href="https://g.co/kgs/6rDvaDk" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291423607">02291 42-3607</a>
+        </p>
       </div>
     </div>
   </div>
-</section> -->
-
-<section class="remises">
+</section>
+<!-- 👮 Seguridad
+Comisaría
+Dirección: C. 23 1137 Cómo llegar (https://g.co/kgs/1i5bFwL)
+Teléfono: 02291 42-0613 llamar -->
+<section id="policia" class="contenedor-cards seguridad">
   <div class="title">
-    <h2>Remises</h2>
+    <h2 appAnimations animationInput="fadeInBottom">Policía</h2>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Comisaría</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: C. 23 1137 <a href="https://g.co/kgs/1i5bFwL" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291420613">02291 42-0613</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🧑‍🚒 Bomberos
+Bomberos Miramar
+Dirección: Calle 17 1660 Cómo llegar (https://g.co/kgs/hfSbTdN)
+Teléfono: 02291 42-1611 llamar -->
+<section id="bomberos" class="contenedor-cards bomberos">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Bomberos</h2>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Bomberos Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 17 1660 <a href="https://g.co/kgs/hfSbTdN" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291421611">02291 42-1611</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🚌 Transporte
+Página de Facebook Costa Azul (https://www.facebook.com/profile.php?id=100063484871855)
+Es la página oficial del único micro que une:
+Miramar - Mar Del Plata
+Miramar - Mar del Sur
+Miramar - Otamendi
+Allí Podés ver los horarios del Micro
+ -->
+
+<section id="transporte" class="contenedor-cards transporte">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Transporte</h2>
+    <!-- <p appAnimations animationInput="fadeInBottom">Página de Facebook Costa Azul</p> -->
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/profile.php?id=100063484871855"
+            target="_blank"
+            rel="noopener"
+            >Costa Azul | Facebook</a
+          >
+        </h3>
+        <p>
+          Es la página oficial del único micro que une: Miramar - Mar Del Plata, Miramar - Mar del Sur, Miramar - Otamendi. 
+          <br>
+          Allí Podés ver los horarios del Micro.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="remises" class="contenedor-cards remises">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Remises</h2>
   </div>
   <div class="cards">
     <div appAnimations animationInput="fadeInBottom" class="card">
@@ -128,13 +237,13 @@
         <p>
           <strong></strong>
           <br />
-          Calle 23 1768
+          Calle 23 1768 <a href="https://g.co/kgs/GbxFFwL" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfonos
           <br />
           <a href="tel:+542291431349">02291 43-1349</a>
           <br />
-          <a href="tel:+542291432076">432076</a>
+          <a href="tel:+542291432076">02291 432076</a>
         </p>
       </div>
     </div>
@@ -146,7 +255,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 23 2225
+          Dirección: Calle 23 2225 <a href="https://g.co/kgs/zt1jGdy" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291421017">02291 42-1017</a>
         </p>
@@ -160,7 +269,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Centro Zona 4, Calle 23 1031
+          Dirección: Centro Zona 4, Calle 23 1031 <a href="https://g.co/kgs/eV7EpUr" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291420000">02291 42-0000</a>
         </p>
@@ -174,7 +283,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Diagonal Fortunato de la Plaza 1452, Centro
+          Dirección: Diagonal Fortunato de la Plaza 1452, Centro <a href="https://g.co/kgs/P5Va3Bu" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291430517">02291 43-0517</a>
         </p>
@@ -188,7 +297,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 21 1818, Centro
+          Dirección: Calle 21 1818, Centro <a href="https://g.co/kgs/hheioJB" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291423200">02291 42-3200</a>
         </p>
@@ -202,7 +311,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 26 1859
+          Dirección: Calle 26 1859 <a href="https://g.co/kgs/SA7D8WB" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291430034">02291 43-0034</a>
         </p>
@@ -216,7 +325,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 30 1053
+          Dirección: Calle 30 1053 <a href="https://g.co/kgs/srjFPzu" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291422720">02291 42-2720</a>
         </p>
@@ -230,7 +339,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 21 1621, Centro
+          Dirección: Calle 21 1621, Centro <a href="https://g.co/kgs/pvBxFQc" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291432929">02291 43-2929</a>
         </p>
@@ -244,7 +353,7 @@
         <p>
           <strong></strong>
           <br />
-          Dirección: Calle 26 664
+          Dirección: Calle 26 664 <a href="https://g.co/kgs/ErmRx72" target="_blank" rel="noopener">¿Cómo llegar?</a>
           <br />
           Teléfono: <a href="tel:+542291430055">02291 43-0055</a>
         </p>
@@ -253,5 +362,188 @@
   </div>
 </section>
 
-<app-contacto></app-contacto>
+<section id="perdidos" class="contenedor-cards perdidos">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">
+      ¿Se te perdió tu mascota? ¿Se te perdió algo?
+    </h2>
+    <p>Grupos de Facebook públicos y con actividad, ideales para publicar</p>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/2598745080393567"
+            target="_blank"
+            rel="noopener"
+            >MI LUGAR EN EL MUNDO MIRAMAR | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/shoppingvirtualmiramar"
+            target="_blank"
+            rel="noopener"
+            >Shopping Virtual Miramar | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/1066923993686478"
+            target="_blank"
+            rel="noopener"
+            >Delivery's Miramar | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/1206236049403572"
+            target="_blank"
+            rel="noopener"
+            >Clasificados Miramar Y Alrededores | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/605310976240889/"
+            target="_blank"
+            rel="noopener"
+            >Miramar (compra y vende) | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/260178384125302/"
+            target="_blank"
+            rel="noopener"
+            >Clasificados Miramar | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/289762537851902/"
+            target="_blank"
+            rel="noopener"
+            >Shopping Virtual Miramar y Zona | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/209747219675527/"
+            target="_blank"
+            rel="noopener"
+            >SHOPPING VIRTUAL MIRAMAR, MAR DEL SUD, OTAMENDI, CHAPADMALAL |
+            Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/groups/1243846509046200/"
+            target="_blank"
+            rel="noopener"
+            >Mercado libre miramar | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 💡 Problemas Eléctricos
+EDEA Miramar
+Dirección: C. 32 490 Cómo llegar
+Teléfono: 02291 42-1258 llamar -->
+<section id="electricidad" class="contenedor-cards electricidad">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Problemas Eléctricos</h2>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>EDEA Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: C. 32 490 <a href="https://g.co/kgs/9n4L1jG" target="_blank" rel="noopener">¿Cómo llegar?</a>
+          <br />
+          Teléfono: <a href="tel:+542291421258">02291 42-1258</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🎭 Espectáculos y Actividades para hacer
+En las páginas oficiales de cultura se suben cronogramas de espectáculos y actividades:
+Cultura Miramar Gral Alvarado | Facebook (https://www.facebook.com/mgacultura)
+CulturaMGA (@mgacultura) | Instagram (https://www.instagram.com/mgacultura/) -->
+<section id="actividades" class="contenedor-cards espectaculos">
+  <div class="title">
+    <h2 appAnimations animationInput="fadeInBottom">Espectáculos y Actividades para hacer</h2>
+    <p appAnimations animationInput="fadeInBottom">En las páginas oficiales de cultura se suben cronogramas de espectáculos y actividades</p>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.facebook.com/mgacultura"
+            target="_blank"
+            rel="noopener"
+            >Cultura Miramar Gral Alvarado | Facebook</a
+          >
+        </h3>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-body">
+        <h3>
+          <a
+            href="https://www.instagram.com/mgacultura/"
+            target="_blank"
+            rel="noopener"
+            >CulturaMGA | Instagram</a
+          >
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <app-public-footer></app-public-footer>
