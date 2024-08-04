@@ -1,14 +1,257 @@
-<!-- <app-public-nav></app-public-nav> -->
 <app-cabecera-paralax></app-cabecera-paralax>
-@for(seccion of seccionesImagenesTexto; track seccion.id){
-    <app-imagen-texto
-        [subtitulo]="seccion.subtitulo"
-        [titulo]="seccion.titulo"
-        [descripcion]="seccion.descripcion"
-        [imagen]="seccion.imagen"
-        [imagenPrimero]="seccion.imagenPrimero"
-        [bgColor]="seccion.bgColor"
-    ></app-imagen-texto>
-}
+
+<!-- MARK: Transporte -->
+ <app-imagen-texto
+ [titulo]="transporte.titulo"
+ [descripcion]="transporte.descripcion"
+ [imagen]="transporte.imagen"></app-imagen-texto>
+<!-- <section class="imagen-texto"> 
+  <div appAnimations animationInput="fadeInBottom" class="image">
+    <img src="img/terminal.webp" alt="" />
+  </div>
+  <div appAnimations animationInput="fadeInRight" class="content">
+    <div class="text">
+      <h2><span>Transporte</span></h2>
+      <p>
+        Página de Facebook Costa Azul |
+        <a
+          class="gf"
+          href="https://www.facebook.com/profile.php?id=100063484871855"
+          target="_blank"
+          rel="noopener"
+          ><strong>Clic Aquí</strong></a
+        >
+        <br />
+        Es la página oficial del único micro que une:
+        <br />
+        Miramar - Mar Del Plata
+        <br />
+        Miramar - Mar del Sur
+        <br />
+        Miramar - Otamendi
+        <br />
+        Allí podrás ver los horarios del Micro`
+      </p>
+    </div>
+  </div>
+</section> -->
+<!-- MARK: Remises -->
+<!-- <section class="imagen-texto">
+  <div appAnimations animationInput="fadeInLeft" class="image">
+    <img src="img/cartel-miramar-tren.webp" alt="" />
+  </div>
+  <div appAnimations animationInput="fadeInRight" class="content">
+    <div class="text">
+      <h2><span>Remises</span></h2>
+      <div class=contenido>
+        <p>Ver todos los remises en Google con sus valoraciones
+        <a
+          href="https://www.google.com/search?sca_esv=e59d9031b627fbb2&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=ADLYWIJD3ry-PYgAUHBXpQrjXzNMtsrKDw:1721142254901&q=remises+en+miramar&rflfq=1&num=10&sa=X&ved=2ahUKEwis6NfF6quHAxWUppUCHcFRC6sQjGp6BAggEAE&biw=1358&bih=620&dpr=1#rlfi=hd:;si:6636147762236742401,l,ChJyZW1pc2VzIGVuIG1pcmFtYXJIpuC2jY-rgIAIWhgQABgCIhJyZW1pc2VzIGVuIG1pcmFtYXKSAQx0YXhpX3NlcnZpY2WaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkNkbHBRZDFoUkVBRaoBSBABKgsiB3JlbWlzZXMoDjIfEAEiGyq3jVeud_Dtz3AmYKd-f91H_SiqFuAmNVpHpDIWEAIiEnJlbWlzZXMgZW4gbWlyYW1hcg;mv:[[-38.262890299999995,-57.834284],[-38.275551899999996,-57.848665000000004]]"
+          target="_blank"
+          rel="noopener"
+          >Clic Aquí</a></p>
+        <ul>
+          <li class="nombre-negocio">
+            <h3>Remisse Plaza</h3>
+            <ul>
+              <li><p>Calle 23 1768</p></li>
+              <li><p>Teléfonos</p>
+                <ul>
+                <li><p><a href="tel:+542291431349">02291 43-1349</a></p></li>
+                <li><p><a href="tel:+542291432076">432076</a></p></li>
+            </ul>
+              </ul>
+          <li class="nombre-negocio"><h3>Remis Sur</h3>
+            <ul>
+              <li><p>Dirección: Calle 23 2225</p></li>
+              <li><p>Teléfono: <a href="tel:+542291421017">02291 42-1017</a></p></li>
+            </ul>
+          </li>
+            <li class="nombre-negocio"><h3>Remisse Pronto</h3>
+                <ul>
+                <li><p>Dirección: Centro Zona 4, Calle 23 1031</p></li>
+                <li><p>Teléfono: <a href="tel:+542291420000">02291 42-0000</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Remise Plaza panda</h3>
+                <ul>
+                <li><p>Dirección: Diagonal Fortunato de la Plaza 1452, Centro</p></li>
+                <li><p>Teléfono: <a href="tel:+542291430517">02291 43-0517</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Remiseria Miramar</h3>
+                <ul>
+                <li><p>Dirección: Calle 21 1818, Centro</p></li>
+                <li><p>Teléfono: <a href="tel:+542291423200">02291 42-3200</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Remises Danny</h3>
+                <ul>
+                <li><p>Dirección: Calle 26 1859</p></li>
+                <li><p>Teléfono: <a href="tel:+542291430034">02291 43-0034</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Hola Remisse</h3>
+                <ul>
+                <li><p>Dirección: Calle 30 1053</p></li>
+                <li><p>Teléfono: <a href="tel:+542291422720">02291 42-2720</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Centro Taxi</h3>
+                <ul>
+                <li><p>Dirección: Calle 21 1621, Centro</p></li>
+                <li><p>Teléfono: <a href="tel:+542291432929">02291 43-2929</a></p></li>
+                </ul>
+            </li>
+            <li class="nombre-negocio"><h3>Mitre Remisse</h3>
+                <ul>
+                <li><p>Dirección: Calle 26 664</p></li>
+                <li><p>Teléfono: <a href="tel:+542291430055">02291 43-0055</a></p></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="remises">
+  <div class="title">
+    <h2>Remises</h2>
+  </div>
+  <div class="cards">
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remisse Plaza</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Calle 23 1768
+          <br />
+          Teléfonos
+          <br />
+          <a href="tel:+542291431349">02291 43-1349</a>
+          <br />
+          <a href="tel:+542291432076">432076</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remis Sur</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 23 2225
+          <br />
+          Teléfono: <a href="tel:+542291421017">02291 42-1017</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remisse Pronto</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Centro Zona 4, Calle 23 1031
+          <br />
+          Teléfono: <a href="tel:+542291420000">02291 42-0000</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remise Plaza panda</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Diagonal Fortunato de la Plaza 1452, Centro
+          <br />
+          Teléfono: <a href="tel:+542291430517">02291 43-0517</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remiseria Miramar</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 21 1818, Centro
+          <br />
+          Teléfono: <a href="tel:+542291423200">02291 42-3200</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Remises Danny</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 26 1859
+          <br />
+          Teléfono: <a href="tel:+542291430034">02291 43-0034</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Hola Remisse</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 30 1053
+          <br />
+          Teléfono: <a href="tel:+542291422720">02291 42-2720</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Centro Taxi</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 21 1621, Centro
+          <br />
+          Teléfono: <a href="tel:+542291432929">02291 43-2929</a>
+        </p>
+      </div>
+    </div>
+    <div appAnimations animationInput="fadeInBottom" class="card">
+      <div class="card-header">
+        <h3>Mitre Remisse</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong></strong>
+          <br />
+          Dirección: Calle 26 664
+          <br />
+          Teléfono: <a href="tel:+542291430055">02291 43-0055</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <app-contacto></app-contacto>
 <app-public-footer></app-public-footer>

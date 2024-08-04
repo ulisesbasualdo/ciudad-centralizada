@@ -15,7 +15,7 @@ export class ImagenTextoComponent {
   @Input()descripcion: string = '';
   @Input()imagen: string = '';
   @Input()imagenPrimero: boolean = true;
-  @Input()bgColor: string = '#fff';
+  @Input()bgColor: string = 'transparent';
   @Input()animationInputImagen: string = 'fadeInTop';
   @Input()animationInputTexto: string = 'fadeInRight';
   @Input()color: string= '#000';
