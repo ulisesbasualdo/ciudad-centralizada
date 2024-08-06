@@ -62,7 +62,7 @@ h1 {
   @media (max-width: 768px) {
     h1 {
         font-weight: 600;
-        font-size: 5.5vmax;
+        font-size: 4.5vmax;
     }
 
     h2 {
@@ -349,4 +349,14 @@ h1 {
       100% {
           opacity: 1;
       }
+  }
+
+  @keyframes displayNoneFade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      display: none;
+    }
   }

@@ -1,30 +1,22 @@
-<!-- <header #header id="header" class="sticky-top header-scrolled">
-    <div class="principal-navbar d-flex align-items-center">
-      <a [routerLink]="''" class="gf logo me-auto"><img src="img/especificas/nav/logo.webp" alt="" class="img-fluid"></a>
-      <nav #nav id="navbar" class="navbar">
-        <ul>
-          <img src="img/especificas/nav/logo.webp" class="img-fluid logo-mobile" alt="">
-          @for(item of navItems; track item){
-            <li><a (click)="toggleNavbar2()" class="nav-item" [routerLink]="item.routerLink" [fragment]="item.fragment">{{item.nombre}}</a></li>
-          }
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle" (click)="toggleNavbar()"></i>
-      </nav>
-    </div>
-</header> -->
-
 <div class="nav">
   <div class="nav-logo">
     <a href="#inicio">Miramar Centralizada</a>
   </div>
-  <div class="nav-items">
+  <div #navItemsContainer class="nav-items">
     <ul>
       @for(item of navItems; track item){
         <li><a [routerLink]="item.routerLink" [fragment]="item.fragment">{{item.nombre}}</a></li>
       }
     </ul>
   </div>
-  <div class="nav-toggle">
-    <i class="mobile-nav-toggle"></i>
+  <div class="contenedor-btn-menu-movil">
+    <button #btnMenuMovil (click)="abrirCerrarMenuMovil()" class="btn-menu-movil">Menú</button>
   </div>
+</div>
+<div [ngClass]="isMenuMovilAbierto ? 'abierto fadeInTop' : 'cerrado' "  class="nav-items-menu-movil">
+  <ul>
+    @for(item of navItems; track item){
+      <li><a (click)="abrirCerrarMenuMovil()" [routerLink]="item.routerLink" [fragment]="item.fragment">{{item.nombre}}</a></li>
+    }
+  </ul>
 </div>
