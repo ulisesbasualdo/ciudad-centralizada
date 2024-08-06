@@ -17,7 +17,8 @@ export class PublicNavComponent {
     {
       nombre: 'Inicio',
       routerLink: '',
-      fragment: ''
+      fragment: 'top',
+      method: 'scrollToTop'
     },
     {
       nombre: 'Salud',
@@ -61,10 +62,18 @@ export class PublicNavComponent {
     },
   ];
 
+  constructor(private viewportScroller: ViewportScroller) { }
+
+  scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
+
   abrirCerrarMenuMovil(){
     this.isMenuMovilAbierto = !this.isMenuMovilAbierto;
     this.btnMenuMovil.nativeElement.innerText = this.isMenuMovilAbierto ? 'X' : 'Menú';
   }
+
+
 
   
 

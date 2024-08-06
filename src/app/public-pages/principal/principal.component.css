@@ -36,6 +36,11 @@ section.remises .title {
   -webkit-box-shadow: 0px 0px 45px 26px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 0px 45px 26px rgba(0, 0, 0, 0.09);
 }
+
+.card a {
+  display: inline-block;
+}
+
 .cards {
   display: flex;
   gap: 1em;
