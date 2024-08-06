@@ -1,0 +1,41 @@
+footer {
+  margin-top: 5%;
+}
+
+.contenedor {
+  width: 100%;
+  background: linear-gradient(45deg, #0f3286 15%, #1441a9, #0f3286 85%);
+  color: #fff;
+  text-align: center;
+  padding-block: 4%;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contacto a{
+    color: #fe65ff;
+}
+
+i {
+  font-size: 1.1vmax;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+    padding-block: 10%;
+    }
+  .contenido {
+    padding-inline: 10%;
+  }
+    i {
+    font-size: 1.7vmax;
+  }
+  .descripcion strong{
+    display:block;
+  }
+}

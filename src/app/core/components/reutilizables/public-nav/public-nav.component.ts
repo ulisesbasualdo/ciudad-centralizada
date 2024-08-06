@@ -13,6 +13,7 @@ export class PublicNavComponent {
   @ViewChild('btnMenuMovil') btnMenuMovil!: ElementRef<HTMLButtonElement>;
   @ViewChild('navItemsContainer')navItemsContainer!: ElementRef<HTMLDivElement>;
   isMenuMovilAbierto = false;
+  // TODO La navegación al top no se produce cuando ya se navegó al indice top
   navItems = [
     {
       nombre: 'Inicio',
