@@ -18,11 +18,12 @@ footer {
 }
 
 .contacto a{
-    color: #fe65ff;
+    color: #65feff;
 }
 
 i {
-  font-size: 1.1vmax;
+  font-family: "Zain", sans-serif;
+  font-size: 1.2vmax;
 }
 
 @media (max-width: 768px) {
@@ -33,7 +34,7 @@ i {
     padding-inline: 10%;
   }
     i {
-    font-size: 1.7vmax;
+    font-size: 1.8vmax;
   }
   .descripcion strong{
     display:block;
