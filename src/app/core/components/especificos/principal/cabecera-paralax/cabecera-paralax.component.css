@@ -23,7 +23,7 @@ p {
     display: grid;
     place-items: center;
     position: relative;
-    height: 100dvh;
+    height: 100vh;
     overflow-x: clip;
 }
 
@@ -61,7 +61,7 @@ span {
 
 @supports(animation-timeline: view()) {
     .header {
-        height: 100dvh;
+        height: 100vh;
     }
 
     .header-content {
