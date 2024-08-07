@@ -44,7 +44,6 @@ p {
 
 img.header-image {
     filter: brightness(0.7);
-    position: fixed;
     object-position: bottom;
 }
 
@@ -75,6 +74,7 @@ span {
         animation: header-image-animation linear forwards;
         animation-timeline: view();
         animation-range: exit;
+        position: fixed;
     }
 
     @media (hover:hover) {
